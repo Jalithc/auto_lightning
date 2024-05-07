@@ -1,3 +1,4 @@
+'''import the libraries and modules'''
 import schedule
 import time
 
@@ -9,6 +10,7 @@ def main_bulb_turned_on():
 def main_bulb_turned_off():
     print("Turned off! Wake upppp....")
 
+'''run the code'''
 schedule.every().day.at("22:54").do(main_bulb_turned_on)
 schedule.every().day.at("07:00").do(main_bulb_turned_off)
 
